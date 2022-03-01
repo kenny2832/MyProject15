@@ -1,8 +1,7 @@
-package Test;
+package tests;
 
-import Page.TopManuBar;
-import Page.LoginPage;
-import Page.SchoolDepartmentsPage;
+import pages.TopManuBar;
+import pages.SchoolDepartmentsPage;
 import org.testng.Assert;
 import org.testng.annotations.*;
 

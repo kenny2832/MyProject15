@@ -7,8 +7,8 @@
             </run>
         </groups>
         <classes>
-            <class name="Test.Hook"/>
-            <class name="Test.Project15Tests"/>
+            <class name="tests.Hook"/>
+            <class name="tests.Project15Tests"/>
         </classes>
     </test>
 

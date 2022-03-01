@@ -1,4 +1,4 @@
-package Test;
+package tests;
 
 public enum ProjectConstants {
     SIGN_IN_URL("https://test.mersys.io/"),

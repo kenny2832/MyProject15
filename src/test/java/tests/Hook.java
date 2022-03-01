@@ -1,8 +1,7 @@
-package Test;
+package tests;
 
-import Page.Base;
-import Page.LoginPage;
-import Utilities.Driver;
+import pages.LoginPage;
+import utilities.Driver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 

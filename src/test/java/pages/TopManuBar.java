@@ -1,10 +1,10 @@
-package Page;
+package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class TopManuBar extends Base{
+public class TopManuBar extends BasePage {
 
     public TopManuBar(){
         PageFactory.initElements(driver,this);

@@ -1,10 +1,10 @@
-package Page;
+package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SchoolDepartmentsPage extends Base{
+public class SchoolDepartmentsPage extends BasePage {
 
     public SchoolDepartmentsPage(){
         PageFactory.initElements(driver,this);
