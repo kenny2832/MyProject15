@@ -1,0 +1,15 @@
+<suite name="Campus Regression Suite">
+
+    <test name="Project 15 Tests">
+        <groups>
+            <run>
+                <include name="project15"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Test.Hook"/>
+            <class name="Test.Project15Tests"/>
+        </classes>
+    </test>
+
+</suite>
