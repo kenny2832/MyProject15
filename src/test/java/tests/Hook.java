@@ -4,6 +4,7 @@ import pages.LoginPage;
 import utilities.Driver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import utilities.ReadFromConfigFile;
 
 public class Hook {
 
@@ -11,7 +12,7 @@ public class Hook {
 
     @BeforeTest(groups = "project15")
     public void navigateToLoginPage(){
-        loginPage.navigateTo(ProjectConstants.SIGN_IN_URL.getText());
+        loginPage.navigateTo(ReadFromConfigFile.getValueFor("homepage"));
         loginPage.clickAcceptCookiesButton();
         loginPage.maximizeWindow();
     }
@@ -19,8 +20,8 @@ public class Hook {
     @BeforeTest(dependsOnMethods = "navigateToLoginPage", groups = "project15")
     public void login(){
         loginPage.clickAcceptCookiesButton();
-        loginPage.inputUsername(ProjectConstants.SIGN_IN_USERNAME.getText());
-        loginPage.inputPassword(ProjectConstants.SIGN_IN_PASSWORD.getText());
+        loginPage.inputUsername(ReadFromConfigFile.getValueFor("username"));
+        loginPage.inputPassword(ReadFromConfigFile.getValueFor("password"));
         loginPage.clickLoginButton();
     }
 

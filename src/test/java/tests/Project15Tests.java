@@ -1,5 +1,4 @@
 package tests;
-
 import pages.TopManuBar;
 import pages.SchoolDepartmentsPage;
 import org.testng.Assert;
@@ -7,28 +6,8 @@ import org.testng.annotations.*;
 
 public class Project15Tests {
 
-//    LoginPage loginPage = new LoginPage();
     TopManuBar topManuBar = new TopManuBar();
     SchoolDepartmentsPage schoolDepartmentsPage = new SchoolDepartmentsPage();
-
-//    @BeforeClass
-//    public void navigateToLoginPage(){
-//        loginPage.navigateTo(ProjectConstants.SIGN_IN_URL.getText());
-//        loginPage.clickAcceptCookiesButton();
-//        loginPage.maximizeWindow();
-//    }
-//    @AfterClass
-//    public void tearDown(){
-//        Driver.quitDriver();
-//    }
-
-//    @Test(groups = "project15")
-//    public void login(){
-//        loginPage.inputUsername(ProjectConstants.SIGN_IN_USERNAME.getText());
-//        loginPage.inputPassword(ProjectConstants.SIGN_IN_PASSWORD.getText());
-//        loginPage.clickAcceptCookiesButton();
-//        loginPage.clickLoginButton();
-//    }
 
     @Test(groups = "project15")
     public void navigateToDepartment(){
