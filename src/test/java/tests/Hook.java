@@ -19,7 +19,6 @@ public class Hook {
 
     @BeforeTest(dependsOnMethods = "navigateToLoginPage", groups = "project15")
     public void login(){
-        loginPage.clickAcceptCookiesButton();
         loginPage.inputUsername(ReadFromConfigFile.getValueFor("username"));
         loginPage.inputPassword(ReadFromConfigFile.getValueFor("password"));
         loginPage.clickLoginButton();

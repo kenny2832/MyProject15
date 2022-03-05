@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -33,11 +32,12 @@ public class LoginPage extends BasePage {
         clickOnElement(loginButton);
     }
     public void clickAcceptCookiesButton(){
-        try{
-            clickOnElement(acceptCookiesButton);
-        }catch (TimeoutException ex){
-
-        }
+        clickOnElement(acceptCookiesButton);
+//        try{
+//            clickOnElement(acceptCookiesButton);
+//        }catch (TimeoutException ex){
+//
+//        }
 
     }
 

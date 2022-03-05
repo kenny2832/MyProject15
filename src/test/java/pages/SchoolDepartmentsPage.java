@@ -28,7 +28,7 @@ public class SchoolDepartmentsPage extends BasePage {
     @FindBy(xpath = "//ms-text-field[@placeholder='GENERAL.FIELD.CODE']//input")
     private WebElement textBoxForCodeOfSchoolDepartment;
 
-    @FindBy(css = "ms-text-field[formcontrolname='name']>input")
+    @FindBy(xpath = "(//school-department-section//div//div//mat-form-field//div//div//div//ms-text-field//input)[1]")
     private WebElement textBoxForNameOfSection;
 
     @FindBy(css = "ms-text-field[formcontrolname='shortName']>input")

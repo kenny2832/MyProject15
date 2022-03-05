@@ -13,11 +13,13 @@ public class BasePage {
 
     protected void clickOnElement(WebElement element){
         wait.until(ExpectedConditions.elementToBeClickable(element));
+        wait.until(ExpectedConditions.visibilityOf(element));
         element.click();
     }
 
     protected void sendKeysToElement(WebElement element, String key){
         wait.until(ExpectedConditions.visibilityOf(element));
+        wait.until(ExpectedConditions.elementToBeClickable(element));
         element.click();
         element.clear();
         element.sendKeys(key);
